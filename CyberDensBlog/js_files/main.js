@@ -4,19 +4,22 @@ const blogPosts = [
       title: 'First Blog Post',
       date: '2022-01-01',
       content: 'This is the content of the first blog post',
-      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg'
+      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg',
+      path: './articles/1_Intro_Article/eng/article.html'
     },
     {
       title: 'Second Blog Post',
       date: '2022-01-02',
       content: 'This is the content of the second blog post',
-      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg'
+      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg',
+      path: './articles/1_Intro_Article/eng/article.html'
     },  
     {
       title: 'Third Blog Post',
       date: '2022-01-03',
       content: 'This is the content of the third blog post',
-      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg'
+      image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg',
+      path: './articles/1_Intro_Article/eng/article.html'
     }
   ];
 
@@ -49,6 +52,7 @@ const blogPosts = [
   
     const postButton = document.createElement('button');
     postButton.textContent = 'Read More';
+    postButton.addEventListener("click", ()=>openArticle(post.path));
     postButton.classList.add('read_more_button');
   
     textWrapper.appendChild(postHeader);
@@ -61,5 +65,9 @@ const blogPosts = [
     blogContainer.appendChild(postWrapper);
   });
 }
-  
+
+function openArticle(path){
+  window.open(path, "_blank") 
+}
+
 window.addEventListener("load", loadPosts);

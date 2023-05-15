@@ -4,7 +4,8 @@ const blogPosts = [
         title: 'Първи Пост',
         date: '01-01-2023',
         content: 'Това е първият ми пост',
-        image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg'
+        image: 'https://bjorsbo.nu/wp-content/uploads/2015/06/Placeholder-Landscape-1.jpg',
+        url: ''
     },
     {
         title: 'Втори Пост',
@@ -49,6 +50,7 @@ function loadPosts() {
 
         const postButton = document.createElement('button');
         postButton.textContent = 'Прочети ме';
+        postButton.onclick = post.title;
         postButton.classList.add('read_more_button');
 
         textWrapper.appendChild(postHeader);
