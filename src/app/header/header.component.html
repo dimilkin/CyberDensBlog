@@ -1,0 +1,14 @@
+<header>
+  <div class="container">
+    <h1>CyberDens</h1>
+    <nav>
+      <a [routerLink]="['/', selectedLang]" i18n="@@navHome">Home</a>
+      <a [routerLink]="['/', selectedLang, 'about']" i18n="@@navAbout">About</a>
+      <a [routerLink]="['/', selectedLang, 'contact']" i18n="@@navContact">Contact</a>
+    </nav>
+    <select (change)="changeLanguage($event)" [value]="selectedLang">
+      <option value="en">English</option>
+      <option value="bg">Bulgarian</option>
+    </select>
+  </div>
+</header>

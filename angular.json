@@ -9,6 +9,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "bg": "src/locale/messages.bg.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -16,6 +22,8 @@
             "outputPath": "dist/cyber-dens-blog-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "localize": true,
+            "i18nMissingTranslation": "warning",
             "polyfills": [
               "zone.js"
             ],
@@ -49,6 +57,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "bg": {
+              "localize": ["bg"]
             }
           },
           "defaultConfiguration": "production"
@@ -61,6 +72,9 @@
             },
             "development": {
               "buildTarget": "CyberDensBlogApp:build:development"
+            },
+            "bg": {
+              "buildTarget": "CyberDensBlogApp:build:bg"
             }
           },
           "defaultConfiguration": "development"
