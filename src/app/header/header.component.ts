@@ -1,33 +1,15 @@
-import { Component } from '@angular/core';
-import {ActivatedRoute, Router, RouterLink} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import {Router, ActivatedRoute, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-header',
+  templateUrl: './header.component.html',
   standalone: true,
   imports: [
     RouterLink
   ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
-  selectedLang = 'en';
+export class HeaderComponent  {
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
-
-  ngOnInit() {
-    this.route.params.subscribe((params) => {
-      if (params['lang']) {
-        this.selectedLang = params['lang'];
-      }
-    });
-  }
-
-  changeLanguage(event: Event) {
-    const newLang = (event.target as HTMLSelectElement).value;
-    const currentLang = this.selectedLang;
-    const currentPath = this.router.url.replace(`/${currentLang}`, '');
-
-    this.router.navigate([`/${newLang}${currentPath}`]);
-  }
 }

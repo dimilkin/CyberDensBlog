@@ -51,7 +51,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
@@ -59,7 +60,8 @@
               "sourceMap": true
             },
             "bg": {
-              "localize": ["bg"]
+              "localize": ["bg"],
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
