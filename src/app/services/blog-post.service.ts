@@ -1,38 +1,52 @@
-import { Injectable } from '@angular/core';
-import {BlogPost} from "../models";
+import { Inject, Injectable, LOCALE_ID } from '@angular/core';
+import { BlogPost } from "../models";
+import { Observable, of } from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { tap, map } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
 })
 export class BlogPostService {
+  private postsUrlBg = 'assets/articles-bg/posts.json';  // Path to Bulgarian JSON file
+  private postsUrlEn = 'assets/articles-en/posts.json';  // Path to English JSON file
+  private postsCacheBg: BlogPost[] | null = null;
+  private postsCacheEn: BlogPost[] | null = null;
 
-  private posts: BlogPost[] = [
-    { id: 1, title: 'First Blog Post',
-      content: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.\n' +
-        '\n' +
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
-      date: '2023-01-01',
-      imageUrl: 'https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=' },
-    { id: 2, title: 'Second Blog Post',
-      content: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.\n' +
-        '\n' +
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
-      date: '2023-02-01',
-      imageUrl: 'https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=' },
-    { id: 3, title: 'Third Blog Post',
-      content: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.\n' +
-        '\n' +
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
-      date: '2023-03-01',
-      imageUrl: 'https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=' }
-  ];
+  constructor(
+    private http: HttpClient,
+    @Inject(LOCALE_ID) private localeId: string
+  ) {}
 
-  getPosts(): BlogPost[] {
-    return this.posts;
+  /** Get posts based on locale */
+  public getPosts(): Observable<BlogPost[]> {
+    return this.localeId === 'bg' ? this.getPostsBg() : this.getPostsEn();
   }
 
-  getPostById(id: number): BlogPost | undefined {
-    return this.posts.find(post => post.id === id);
+  /** Get a post by ID */
+  public getPostById(id: number): Observable<BlogPost | undefined> {
+    return this.getPosts().pipe(
+      map(posts => posts.find(post => post.id === id))
+    );
   }
 
+  /** Fetch Bulgarian posts with caching */
+  private getPostsBg(): Observable<BlogPost[]> {
+    if (this.postsCacheBg) {
+      return of(this.postsCacheBg);
+    }
+    return this.http.get<BlogPost[]>(this.postsUrlBg).pipe(
+      tap(posts => this.postsCacheBg = posts)
+    );
+  }
+
+  /** Fetch English posts with caching */
+  private getPostsEn(): Observable<BlogPost[]> {
+    if (this.postsCacheEn) {
+      return of(this.postsCacheEn);
+    }
+    return this.http.get<BlogPost[]>(this.postsUrlEn).pipe(
+      tap(posts => this.postsCacheEn = posts)
+    );
+  }
 }

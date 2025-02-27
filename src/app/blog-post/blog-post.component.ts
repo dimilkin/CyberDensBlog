@@ -18,11 +18,7 @@ export class BlogPostComponent {
   constructor(private router: Router) {}
 
   viewDetails(id: number) {
-    // Get the current language (this.selectedLang or from the route)
-    const currentLang = 'en';
-
-    // Navigate with the language prefix
-    this.router.navigate([`/${currentLang}/blog-post`, id]);
+    this.router.navigate(['/blog-post', id]);
   }
 
 }

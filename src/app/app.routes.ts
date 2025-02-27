@@ -10,10 +10,10 @@ export const routes: Routes = [
   {path: 'about', component: AboutMeComponent},
 
   // Redirect root path to default language (e.g., / -> /en)
-  {path: '', redirectTo: '/', pathMatch: 'full'},
+  {path: '', redirectTo: '/bg', pathMatch: 'full'},
 
   // Optional fallback to handle unknown routes (e.g., 404s)
-  {path: '**', redirectTo: '/'},
+  {path: '**', redirectTo: '/bg'},
 ];
 
 @NgModule({
