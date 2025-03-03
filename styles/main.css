@@ -1,0 +1,131 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark Theme */
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #fff; /* Neon Blue */
+}
+
+/* Blog Grid Layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Blog Post Card */
+.blog-post {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 212, 255, 0.5);
+}
+
+/* Blog Image */
+.blog-thumbnail {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Blog Content */
+.blog-content h2 {
+  font-size: 22px;
+  color: #00d4ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+.blog-content p {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.6;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Post Date */
+.post-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Read More Button */
+button {
+  background-color: #00d4ff;
+  color: #121212;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0098c6;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .blog-post {
+      text-align: left;
+      padding: 20px;
+  }
+
+  .blog-thumbnail {
+      width: 100%;
+      max-height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-thumbnail {
+      max-height: 300px;
+  }
+
+  .blog-content h2 {
+      font-size: 24px;
+  }
+
+  .blog-content p {
+      font-size: 18px;
+  }
+}
