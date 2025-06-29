@@ -1,30 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post</title>
+    <title>Блог Статия - Cyberdens</title>
+    <meta name="description" content="Прочетете най-новите прозрения за здравните технологии и софтуерното разработване.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/post.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
-<header>
-    <div class="container">
-      <h1>Cyberdens</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-         <!-- <button id="lang-toggle">BG/EN</button>  -->
-      </nav>
-    </div>
-  </header> 
 <body>
-
-    <div id="blog-post-detail" class="blog-post-detail">
-        <h2 id="post-title"></h2>
-        <img id="post-image" class="blog-image" alt="Post Image">
-        <p id="post-content"></p>
-        <p><small id="post-date"></small></p>
-    </div>
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Cyberdens</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Начало</a></li>
+                    <li><a href="about.html" class="nav-link">За Мен</a></li>
+                    <li><a href="../post.html" class="nav-link">EN</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="post-page">
+        <div class="post-container">
+            <article class="post-article">
+                <header class="post-header">
+                    <h1 id="post-title" class="post-title">Зареждане...</h1>
+                    <div id="post-date" class="post-meta-info">
+                        <time>Зареждане...</time>
+                    </div>
+                </header>
+                
+                <div id="post-content" class="post-content">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+                
+                <div class="share-section">
+                    <h3 class="share-title">Споделете тази статия</h3>
+                    <div class="share-buttons">
+                        <a href="#" class="share-button" id="share-twitter">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="#" class="share-button" id="share-linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="#" class="share-button" id="share-facebook">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <button class="share-button" id="copy-link">
+                            <i class="fas fa-link"></i>
+                            Копирай Връзка
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            <nav class="post-navigation">
+                <a href="index.html" class="nav-button back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Обратно към Статиите
+                </a>
+                <a href="about.html" class="nav-button">
+                    За Автора
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
 
     <script src="post-script.js"></script>
 </body>

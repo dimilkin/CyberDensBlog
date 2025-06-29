@@ -1,83 +1,158 @@
 [
     {
         "id": 1,
-        "title": "First Post",
-        "preview": "Preview text",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
+        "title": "The Future of Healthcare Technology",
+        "preview": "Exploring how artificial intelligence and digital solutions are transforming patient care and medical practices in the modern healthcare landscape.",
+        "imageUrl": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
         "content": [
             {
                 "type": "paragraph",
-                "text": "First paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "The healthcare industry is experiencing a digital revolution that's fundamentally changing how we approach patient care, diagnosis, and treatment. From AI-powered diagnostic tools to telemedicine platforms, technology is bridging gaps and creating new possibilities for healthcare delivery."
             },
             {
                 "type": "image",
-                "url": "https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=",
-                "caption": "Description of the first image"
+                "url": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "Modern healthcare technology in action"
             },
             {
                 "type": "paragraph",
-                "text": "Second paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            },
-            {
-                "type": "ad",
-                "bannerUrl": "ad_banner.jpg",
-                "link": "https://example.com/ad-link",
-                "description": "Advertisement description"
+                "text": "Artificial intelligence is particularly transformative in medical imaging, where machine learning algorithms can now detect patterns and anomalies that might be missed by the human eye. This technology doesn't replace healthcare professionals but rather enhances their capabilities, allowing for more accurate diagnoses and personalized treatment plans."
             },
             {
                 "type": "paragraph",
-                "text": "Third paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "The integration of electronic health records, wearable devices, and mobile health applications creates a comprehensive ecosystem that empowers both patients and providers. Patients can now actively participate in their healthcare journey, monitoring vital signs, tracking medications, and communicating with their healthcare team in real-time."
             }
         ],
-        "date": "20.03.2025"
-    }, 
-
-    {
-        "id": 1,
-        "title": "First Blog Post",
-        "preview" : "SOme preview",
-        "content": "Here is a short preview of the second blog post.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "February 28, 2025"
+        "date": "March 15, 2025"
     },
     {
         "id": 2,
-        "title": "Second Blog Post",
-        "preview" : "SOme preview",
-        "content": "Here is a short preview of the second blog post.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "February 27, 2025"
+        "title": "From Dentistry to Software Development",
+        "preview": "My personal journey transitioning from healthcare practice to full-stack development, and the valuable lessons learned along the way.",
+        "imageUrl": "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Making a career transition from dentistry to software development wasn't a decision I took lightly. After four years of practicing dental medicine, I found myself increasingly drawn to the problem-solving aspects of technology and its potential to improve healthcare outcomes."
+            },
+            {
+                "type": "paragraph",
+                "text": "The skills I developed in healthcare—attention to detail, patient communication, systematic problem-solving, and working under pressure—have proven invaluable in my software development career. Both fields require precision, continuous learning, and a commitment to helping others."
+            },
+            {
+                "type": "image",
+                "url": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "The intersection of healthcare and technology"
+            },
+            {
+                "type": "paragraph",
+                "text": "Today, I'm passionate about building software solutions that can make healthcare more accessible, efficient, and patient-centered. The combination of my medical background and technical skills allows me to understand both the challenges healthcare providers face and the technological solutions that can address them."
+            }
+        ],
+        "date": "March 10, 2025"
     },
     {
-        "id": 1,
-        "title": "First Blog Post",
-        "preview" : "SOme preview",
-        "content": "This is a brief introduction to the first blog post. Click to read more!",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
+        "id": 3,
+        "title": "Building Patient-Centric Software Solutions",
+        "preview": "How user experience principles and healthcare expertise combine to create software that truly serves patients and healthcare providers.",
+        "imageUrl": "https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Creating software for healthcare requires more than just technical expertise—it demands a deep understanding of patient needs, clinical workflows, and the regulatory environment that governs medical practice."
+            },
+            {
+                "type": "paragraph",
+                "text": "Patient-centric design starts with empathy. Having worked directly with patients, I understand the anxiety and confusion that can accompany medical visits. Software solutions should reduce this stress, not add to it. This means intuitive interfaces, clear communication, and reliable functionality."
+            },
+            {
+                "type": "image",
+                "url": "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "User-friendly healthcare interfaces make a difference"
+            },
+            {
+                "type": "paragraph",
+                "text": "For healthcare providers, software should enhance their ability to deliver quality care rather than create additional administrative burden. This requires careful consideration of clinical workflows, integration with existing systems, and robust security measures to protect patient data."
+            }
+        ],
+        "date": "March 5, 2025"
+    },
+    {
+        "id": 4,
+        "title": "The Importance of Data Security in Healthcare",
+        "preview": "Understanding HIPAA compliance, data protection, and security best practices when developing healthcare software applications.",
+        "imageUrl": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Healthcare data is among the most sensitive information we handle as software developers. Patient privacy isn't just a legal requirement—it's a fundamental trust that forms the foundation of the healthcare relationship."
+            },
+            {
+                "type": "paragraph",
+                "text": "HIPAA compliance goes beyond encryption and access controls. It requires a comprehensive approach to data handling, including employee training, audit trails, incident response procedures, and regular security assessments."
+            },
+            {
+                "type": "image",
+                "url": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "Security is paramount in healthcare software"
+            },
+            {
+                "type": "paragraph",
+                "text": "As developers, we must build security into every layer of our applications—from secure coding practices and database encryption to secure communication protocols and user authentication. The cost of a data breach in healthcare extends far beyond financial penalties; it can destroy the trust that patients place in their healthcare providers."
+            }
+        ],
         "date": "February 28, 2025"
     },
     {
-        "id": 2,
-        "title": "Second Blog Post",
-        "preview" : "SOme preview",
-        "content": "Here is a short preview of the second blog post.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "February 27, 2025"
+        "id": 5,
+        "title": "Modern Web Development Best Practices",
+        "preview": "Essential principles for building scalable, maintainable, and user-friendly web applications in today's development landscape.",
+        "imageUrl": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Modern web development has evolved significantly over the past few years. Today's applications need to be fast, accessible, secure, and maintainable while providing excellent user experiences across all devices."
+            },
+            {
+                "type": "paragraph",
+                "text": "Performance optimization starts with choosing the right architecture and tools for your project. This includes considering factors like server-side rendering, code splitting, image optimization, and efficient state management."
+            },
+            {
+                "type": "image",
+                "url": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "Clean code and modern development practices"
+            },
+            {
+                "type": "paragraph",
+                "text": "Accessibility should be built into every application from the ground up. This means semantic HTML, proper ARIA labels, keyboard navigation support, and testing with screen readers. Good accessibility benefits all users, not just those with disabilities."
+            }
+        ],
+        "date": "February 25, 2025"
     },
     {
-        "id": 1,
-        "title": "First Blog Post",
-        "preview" : "SOme preview",
-        "content": "This is a brief introduction to the first blog post. Click to read more!",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "February 28, 2025"
-    },
-    {
-        "id": 2,
-        "title": "Second Blog Post",
-        "preview" : "SOme preview",
-        "content": "Here is a short preview of the second blog post.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "February 27, 2025"
+        "id": 6,
+        "title": "The Role of AI in Modern Healthcare",
+        "preview": "Examining how artificial intelligence is revolutionizing diagnosis, treatment planning, and patient care in healthcare settings.",
+        "imageUrl": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Artificial intelligence is no longer a futuristic concept in healthcare—it's a present reality that's transforming how we diagnose diseases, plan treatments, and deliver patient care."
+            },
+            {
+                "type": "paragraph",
+                "text": "Machine learning algorithms can analyze medical images with remarkable accuracy, often detecting subtle patterns that human eyes might miss. In radiology, AI systems are helping radiologists identify early-stage cancers, while in pathology, they're assisting with tissue analysis and diagnosis."
+            },
+            {
+                "type": "image",
+                "url": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
+                "caption": "AI-powered medical imaging and analysis"
+            },
+            {
+                "type": "paragraph",
+                "text": "The future of AI in healthcare lies not in replacing healthcare professionals, but in augmenting their capabilities. By handling routine tasks and providing data-driven insights, AI allows healthcare providers to focus on what they do best—caring for patients and making complex clinical decisions."
+            }
+        ],
+        "date": "February 20, 2025"
     }
 ]

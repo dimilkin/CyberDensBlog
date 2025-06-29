@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Cyberdens - Healthcare & Technology Blog</title>
+    <meta name="description" content="Exploring the intersection of healthcare and technology through the lens of a dental professional turned software developer.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
-<header>
-    <div class="container">
-      <h1>Cyberdens</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="bg/index.html">BG</a>
-      </nav>
-    </div>
-  </header>     
 <body>
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Cyberdens</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Me</a></li>
+                    <li><a href="bg/index.html" class="nav-link">BG</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
     <main>
-        <h2>Latest Articles</h2>
-        <div id="posts-container" class="blog-grid"></div>
+        <div class="container">
+            <section class="hero-section">
+                <h1 class="hero-title">Healthcare Meets Technology</h1>
+                <p class="hero-subtitle">
+                    Exploring the intersection of healthcare and technology through the lens of a dental professional turned software developer.
+                </p>
+            </section>
+            
+            <section class="blog-section">
+                <div id="posts-container" class="blog-grid">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="scripts/main-script.js"></script>
 </body>
-</html> 
-
+</html>

@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Cyberdens - Блог за Здравеопазване и Технологии</title>
+    <meta name="description" content="Изследване на пресечната точка между здравеопазването и технологиите през призмата на зъболекар, превърнат в софтуерен разработчик.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
-<header>
-    <div class="container">
-      <h1>Cyberdens</h1>
-      <nav>
-        <a href="index.html">Начало</a>
-        <a href="about.html">За Мен</a>
-        <a href="../index.html">EN</a>
-      </nav>
-    </div>
-  </header>     
 <body>
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Cyberdens</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Начало</a></li>
+                    <li><a href="about.html" class="nav-link">За Мен</a></li>
+                    <li><a href="../index.html" class="nav-link">EN</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
     <main>
-        <h2>Latest Articles</h2>
-        <div id="posts-container" class="blog-grid"></div>
+        <div class="container">
+            <section class="hero-section">
+                <h1 class="hero-title">Здравеопазването Среща Технологиите</h1>
+                <p class="hero-subtitle">
+                    Изследване на пресечната точка между здравеопазването и технологиите през призмата на зъболекар, превърнат в софтуерен разработчик.
+                </p>
+            </section>
+            
+            <section class="blog-section">
+                <div id="posts-container" class="blog-grid">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="main-script.js"></script>

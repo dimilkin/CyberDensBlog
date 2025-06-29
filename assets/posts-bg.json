@@ -1,141 +1,126 @@
 [
     {
         "id": 1,
-        "title": "First Post",
-        "preview": "Preview text",
+        "title": "Първи Пост",
+        "preview": "Подзаглавие на темата",
         "imageUrl": "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=",
         "content": [
             {
                 "type": "paragraph",
-                "text": "First paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "Първи параграф. Това е примерен текст, който демонстрира как би изглеждало съдържанието на статията. Текстът е написан на български език и съдържа информация за здравеопазването и технологиите."
             },
             {
                 "type": "image",
                 "url": "https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=",
-                "caption": "Description of the first image"
+                "caption": "Описание на първото изображение"
             },
             {
                 "type": "paragraph",
-                "text": "Second paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            },
-            {
-                "type": "ad",
-                "bannerUrl": "ad_banner.jpg",
-                "link": "https://example.com/ad-link",
-                "description": "Advertisement description"
+                "text": "Втори параграф. Продължаваме с повече информация за темата. Тук можем да добавим повече детайли и примери за по-добро разбиране на съдържанието."
             },
             {
                 "type": "paragraph",
-                "text": "Third paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "Трети параграф. Заключаваме статията с заключение и основни изводи от представената информация."
             }
         ],
-        "date": "20.03.2025"
-    }, 
+        "date": "Февруари 28, 2025"
+    },
     {
-        "id": 33,
-        "title": "33 Post",
-        "preview": "Preview text",
+        "id": 2,
+        "title": "Втори Пост",
+        "preview": "Второ подзаглавие",
+        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Първи параграф от втория пост. Този текст демонстрира различна тема и подход към представянето на информацията."
+            },
+            {
+                "type": "paragraph",
+                "text": "Втори параграф. Тук добавяме повече контекст и детайли за по-добро разбиране на темата."
+            },
+            {
+                "type": "image",
+                "url": "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=",
+                "caption": "Илюстрация на концепцията"
+            },
+            {
+                "type": "paragraph",
+                "text": "Заключителен параграф с основни изводи и препоръки."
+            }
+        ],
+        "date": "Март 1, 2025"
+    },
+    {
+        "id": 3,
+        "title": "Трети Пост",
+        "preview": "Трето подзаглавие",
+        "imageUrl": "https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Първи параграф от третия пост. Този текст фокусира върху различни аспекти на здравеопазването и технологиите."
+            },
+            {
+                "type": "paragraph",
+                "text": "Втори параграф с допълнителна информация и примери за практическо приложение."
+            },
+            {
+                "type": "paragraph",
+                "text": "Трети параграф, който обобщава основните точки и предоставя насоки за бъдещо развитие."
+            }
+        ],
+        "date": "Март 5, 2025"
+    },
+    {
+        "id": 4,
+        "title": "Четвърти Пост",
+        "preview": "Четвърто подзаглавие",
         "imageUrl": "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=",
         "content": [
             {
                 "type": "paragraph",
-                "text": "First paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "Първи параграф от четвъртия пост. Този текст разглежда нови тенденции и иновации в областта."
             },
             {
                 "type": "image",
-                "url": "https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=",
-                "caption": "Description of the first image"
+                "url": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
+                "caption": "Визуализация на концепцията"
             },
             {
                 "type": "paragraph",
-                "text": "Second paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "Втори параграф с анализ и коментари върху представените идеи."
             },
             {
                 "type": "paragraph",
-                "text": "Third paragraph. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "text": "Заключение с препоръки и насоки за бъдещо развитие."
             }
         ],
-        "date": "20.03.2025"
-    }, 
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
+        "date": "Март 10, 2025"
     },
     {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "Първи Пост",
-        "preview" : "Подзаглавие на темата",
-        "content": "Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.Празен текст само за място е тук.",
-        "imageUrl": "https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=",
-        "date": "Февруари 28, 2025"
-        
-    },
-    {
-        "id": 1,
-        "title": "First Post",
-        "preview" : "Preview text",
-        "content": "Content content",
-        "imageUrl": "test.jpg",
-        "date": "20.03.2025"
-        
+        "id": 5,
+        "title": "Пети Пост",
+        "preview": "Пето подзаглавие",
+        "imageUrl": "https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Първи параграф от петия пост. Този текст представя нови перспективи и подходи в областта на здравеопазването."
+            },
+            {
+                "type": "paragraph",
+                "text": "Втори параграф с детайлен анализ на представените концепции и техните приложения."
+            },
+            {
+                "type": "paragraph",
+                "text": "Трети параграф с практически примери и случаи на употреба."
+            },
+            {
+                "type": "paragraph",
+                "text": "Заключителен параграф с обобщение и бъдещи насоки за развитие."
+            }
+        ],
+        "date": "Март 15, 2025"
     }
 ]

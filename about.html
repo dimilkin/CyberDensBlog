@@ -3,57 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles/about.css">
+    <title>About Me - Cyberdens</title>
+    <meta name="description" content="Learn about Dimitar's journey from dentistry to software development and his passion for healthcare technology.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
-<header>
-    <div class="container">
-      <h1>Cyberdens</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="bg/about.html">BG</a>
-      </nav>
-    </div>
-  </header> 
 <body>
-    <div class="about-page">
-        <div class="profile-image">
-            <img src="assets/meprofile.jpeg" alt="Dimitar's Profile Picture" id="profile-image">
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Cyberdens</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Me</a></li>
+                    <li><a href="bg/about.html" class="nav-link">BG</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
+    </header>
+    
+    <main class="about-page">
+        <div class="about-container">
+            <section class="about-hero">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <img src="assets/meprofile.jpeg" 
+                             alt="Dimitar's Profile Picture" 
+                             class="profile-image">
+                        <div class="status-indicator" title="Available for collaboration"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h1 class="about-title">Hello, I'm Dimitar</h1>
+                    <p class="about-subtitle">
+                       Hello and thank you for stopping by.
+                    </p>
+                </div>
+            </section>
 
-        <div class="about-content">
-            <h1 id="about-title">👋 Hello, I'm Dimitar</h1>
-
-            <p id="healthcare-background">
-                🏥 <strong>Healthcare Background:</strong> I earned my Doctor of Dental Medicine degree in 2016 and practiced in the healthcare field for four years. This experience allowed me to understand the critical role that patient-centricity and quality care play in driving overall patient satisfaction and improving treatment outcomes.
-            </p>
-
-            <p id="software-background">
-                💻 <strong>Software Engineering Background:</strong> In 2020, I pivoted into software development, transforming my long-time hobby into my profession. Since then, I’ve been working as a full-stack developer, while continuing to stay connected with the latest advancements in medical technology.
-            </p>
-
-            <p id="passion">
-                ❤️ <strong>Passion:</strong> My passion lies at the intersection of healthcare and technology. I am motivated to bridge these worlds by leveraging software to improve healthcare delivery and enhance patient experiences.
-            </p>
-
-            <div class="contact-section">
-                <a href="https://www.linkedin.com/in/dimitar-milkin-6344a7100/" target="_blank" class="contact-link linkedin-link">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
-
-                <a href="mailto:drmilkin@gmail.com" class="contact-link email-link">
-                    <i class="fas fa-envelope"></i> Contact via Email
-                </a>
+            <div class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-user-md section-icon"></i>
+                    Healthcare Background
+                </h2>
+                <div class="section-content">
+                    I earned my Doctor of Dental Medicine degree in 2016 and practiced in the healthcare field for four years. This experience allowed me to understand the critical role that patient-centricity and quality care play in driving overall patient satisfaction and improving treatment outcomes. Working directly with patients taught me the importance of empathy, precision, and clear communication in healthcare delivery.
+                </div>
             </div>
 
-            <p class="closing-note">
-                📧 <em>Thank you for visiting my page. Feel free to reach out for questions, collaborations, or just to say hello!</em>
-            </p>
-        </div>
-    </div>
+            <div class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code section-icon"></i>
+                    Software Engineering Journey
+                </h2>
+                <div class="section-content">
+                    In 2020, I pivoted into software development, transforming my long-time hobby into my profession. Since then, I've been working as a full-stack developer, while continuing to stay connected with the latest advancements in medical technology. This transition allowed me to combine my healthcare knowledge with technical skills to build solutions that truly understand user needs.
+                </div>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-heart section-icon"></i>
+                    My Passion
+                </h2>
+                <div class="section-content">
+                    My passion lies at the intersection of healthcare and technology. I am motivated to bridge these worlds by leveraging software to improve healthcare delivery and enhance patient experiences. 
+                </div>
+            </div>
+
+            <section class="contact-section">
+                <h2 class="contact-title">Let's Connect</h2>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/dimitar-milkin-6344a7100/" 
+                       target="_blank" 
+                       class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:drmilkin@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+                <p class="closing-note">
+                    Thank you for visiting my page. Feel free to reach out for questions, collaborations, or just to say hello!
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <script src="scripts/about-script.js"></script>
 </body>
 </html>
