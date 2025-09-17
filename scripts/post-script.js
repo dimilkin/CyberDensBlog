@@ -102,6 +102,21 @@ function displayPost(post) {
     
     // Add smooth animations
     animateContent();
+
+    // Fire GA4 post_view event
+    if (window.gtag) {
+        try {
+            gtag('event', 'post_view', {
+                post_id: String(post.id),
+                post_title: post.title,
+                post_date: post.date,
+                language: document.documentElement.lang || 'en',
+                page_location: window.location.href
+            });
+        } catch (e) {
+            // no-op
+        }
+    }
 }
 
 // Create content elements based on type

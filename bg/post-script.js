@@ -102,6 +102,21 @@ function displayPost(post) {
     
     // Add smooth animations
     animateContent();
+
+    // Fire GA4 post_view event
+    if (window.gtag) {
+        try {
+            gtag('event', 'post_view', {
+                post_id: String(post.id),
+                post_title: post.title,
+                post_date: post.date,
+                language: document.documentElement.lang || 'bg',
+                page_location: window.location.href
+            });
+        } catch (e) {
+            // no-op
+        }
+    }
 }
 
 // Create content elements based on type
@@ -110,6 +125,15 @@ function createContentElement(item, index) {
         case "paragraph":
             const paragraph = document.createElement("p");
             paragraph.textContent = item.text;
+            if (item.link && typeof item.link === 'string' && item.link.trim() !== '') {
+                paragraph.appendChild(document.createTextNode(' '));
+                const a = document.createElement('a');
+                a.href = item.link;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.textContent = 'тук';
+                paragraph.appendChild(a);
+            }
             paragraph.style.animationDelay = `${index * 0.1}s`;
             return paragraph;
             
