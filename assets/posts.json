@@ -1,158 +1,114 @@
 [
     {
         "id": 1,
-        "title": "The Future of Healthcare Technology",
-        "preview": "Exploring how artificial intelligence and digital solutions are transforming patient care and medical practices in the modern healthcare landscape.",
-        "imageUrl": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "title": "DNA and NHIS",
+        "preview": "What are the similarities between biological and computer systems",
+        "imageUrl": "https://imagizer.imageshack.com/img923/5682/2V80T8.png",
         "content": [
             {
                 "type": "paragraph",
-                "text": "The healthcare industry is experiencing a digital revolution that's fundamentally changing how we approach patient care, diagnosis, and treatment. From AI-powered diagnostic tools to telemedicine platforms, technology is bridging gaps and creating new possibilities for healthcare delivery."
+                "text": "The National Health Information System (NHIS) plays the role of a guardian of essential data, similar to DNA. Both systems share numerous similarities in terms of information processing."
+            },
+            {
+                "type": "paragraph",
+                "text": "Just as DNA cannot be directly accessed to use the information from it, NHIS also does not provide direct access to end users of the system. For this purpose, both systems use intermediaries that have access only to the necessary information for a specific purpose, following strictly defined rules and mechanisms. In the case of DNA, such an intermediary is messenger RNA (mRNA), whose task is to copy a specific section of DNA and make it possible to read it through a process called transcription."
+            },
+            {
+                "type": "paragraph",
+                "text": "In a similar way, when a system reads information from a database, this happens according to certain rules known as \"transactions\". The result of this process is a copy of the requested information, which, however, is not yet ready for immediate use by the biological or computer system. This is followed by the process of translating the information - the so-called translation. In the biological system, this includes the creation of a protein molecule according to the instructions recorded in mRNA. In computer systems (with slight conventions), the process is similar and is called deserialization. The end result is a logically new object that the respective system can use. In the biological context, this is a specific protein with a characteristic structure and function, while in the software system, this is a specific data object that facilitates working with the data."
             },
             {
                 "type": "image",
-                "url": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "Modern healthcare technology in action"
+                "url": "https://imagizer.imageshack.com/img922/8585/8yLbVX.png"
             },
             {
                 "type": "paragraph",
-                "text": "Artificial intelligence is particularly transformative in medical imaging, where machine learning algorithms can now detect patterns and anomalies that might be missed by the human eye. This technology doesn't replace healthcare professionals but rather enhances their capabilities, allowing for more accurate diagnoses and personalized treatment plans."
+                "text": "It is important to note that these objects reflect the available information at the moment of copying it. If in the meantime the available information in the DNA or database is changed, this will not be automatically reflected in the newly created objects and they will represent the old data. While such events are exceptional with DNA, they can occur with databases."
             },
             {
                 "type": "paragraph",
-                "text": "The integration of electronic health records, wearable devices, and mobile health applications creates a comprehensive ecosystem that empowers both patients and providers. Patients can now actively participate in their healthcare journey, monitoring vital signs, tracking medications, and communicating with their healthcare team in real-time."
+                "text": "Here lies the major difference between the two systems. DNA itself is a complete set of information that cannot be easily added to or removed - or at least it is not recommended. The available data can be modified, but this happens slowly and with difficulty on random principles. On the other hand, databases are created to collect data. The recording of information is carried out through a complex mechanism to guarantee the integrity, homogeneity, and reliability of the data upon completion of the record. These principles are particularly critical for medical information."
+            },
+            {
+                "type": "image",
+                "url": "https://imagizer.imageshack.com/img922/7498/3NyfUm.png"
+            },
+            {
+                "type": "ad",
+                "bannerUrl": "ad_banner.jpg",
+                "link": "https://example.com/ad-link",
+                "description": "Advertisement description"
+            },
+            {
+                "type": "paragraph",
+                "text": "For this reason, software developed to work with NHIS must meet a number of requirements when making queries to the central system. Queries are made according to the international standard HL7 FHIR and are accompanied by an electronic signature as a guarantee of authenticity and uniqueness."
+            },
+            {
+                "type": "paragraph",
+                "text": "The similarities between biological and computer systems are numerous. It is interesting how, in building the architecture and principles of software operation, people have imitated many of the principles of action of biological systems. We hope in future publications to examine more such principles."
             }
         ],
-        "date": "March 15, 2025"
+        "date": "September 17, 2025"
     },
     {
         "id": 2,
-        "title": "From Dentistry to Software Development",
-        "preview": "My personal journey transitioning from healthcare practice to full-stack development, and the valuable lessons learned along the way.",
-        "imageUrl": "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "title": "Digital Health in the EU and NHIS",
+        "preview": "Preview text",
+        "imageUrl": "https://imagizer.imageshack.com/img922/9263/UW9w69.png",
         "content": [
             {
                 "type": "paragraph",
-                "text": "Making a career transition from dentistry to software development wasn't a decision I took lightly. After four years of practicing dental medicine, I found myself increasingly drawn to the problem-solving aspects of technology and its potential to improve healthcare outcomes."
-            },
-            {
-                "type": "paragraph",
-                "text": "The skills I developed in healthcare—attention to detail, patient communication, systematic problem-solving, and working under pressure—have proven invaluable in my software development career. Both fields require precision, continuous learning, and a commitment to helping others."
+                "text": "European healthcare is undergoing a profound transformation, driven by greater citizen mobility, advances in digital technologies, and the need for consistent evaluation of medical innovations. Recent EU legislative acts — Directive 2011/24/EU, Implementing Decision (EU) 2019/1765, and Regulation (EU) 2021/2282 — build the foundation of this transformation. They form a framework that strengthens patient rights, develops connected digital health systems, and harmonizes the assessment of health technologies. This text examines how these initiatives are shaping the future of healthcare in Europe and what they mean for health professionals and for the National Health Information System (NHIS) in Bulgaria."
             },
             {
                 "type": "image",
-                "url": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "The intersection of healthcare and technology"
+                "url": "https://imagizer.imageshack.com/img922/7498/3NyfUm.png"
             },
             {
                 "type": "paragraph",
-                "text": "Today, I'm passionate about building software solutions that can make healthcare more accessible, efficient, and patient-centered. The combination of my medical background and technical skills allows me to understand both the challenges healthcare providers face and the technological solutions that can address them."
-            }
-        ],
-        "date": "March 10, 2025"
-    },
-    {
-        "id": 3,
-        "title": "Building Patient-Centric Software Solutions",
-        "preview": "How user experience principles and healthcare expertise combine to create software that truly serves patients and healthcare providers.",
-        "imageUrl": "https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "Creating software for healthcare requires more than just technical expertise—it demands a deep understanding of patient needs, clinical workflows, and the regulatory environment that governs medical practice."
+                "text": "Patient Rights in Cross-Border Healthcare\nDirective 2011/24/EU guarantees the right of EU citizens to receive health services in another member state and to have their costs reimbursed by their country of origin. Patients can travel for treatment abroad if it is covered by their national health system. Reimbursement of costs is at the same level as for treatment in their own country, but cannot exceed the actual cost of the service. In some cases — such as hospital stays or highly specialized treatment — prior authorization may be required.\nThe directive also defines the responsibilities of the country of origin and the country of treatment. The former is responsible for reimbursing costs and for follow-up care, while the latter must ensure safe and quality health services on equal terms for foreign patients. Beyond individual rights, the document encourages cooperation through European Reference Networks for rare diseases and through digital initiatives, which today are reflected in European health systems such as Bulgaria's NHIS."
             },
             {
                 "type": "paragraph",
-                "text": "Patient-centric design starts with empathy. Having worked directly with patients, I understand the anxiety and confusion that can accompany medical visits. Software solutions should reduce this stress, not add to it. This means intuitive interfaces, clear communication, and reliable functionality."
+                "text": "Building the Digital Backbone: The eHealth Network\nImplementing Decision (EU) 2019/1765 establishes the rules for the functioning of the eHealth Network — a voluntary platform for cooperation between national health authorities of EU member states. The goal is to ensure that citizens' medical data can be securely exchanged between individual countries, thus facilitating access to health services throughout the EU.\nThe network's objective is to ensure the integration of electronic health records, to provide conditions for the development of telemedicine, mobile applications, artificial intelligence, and big data analysis in healthcare. Security and protection of personal data are fundamental principles, with strict cybersecurity standards being introduced. The network also proved its importance during the COVID-19 pandemic, when it supported the interoperability of national contact tracing applications.\nBy 2025, all 27 member states are actively participating in this network. For Bulgaria, through NHIS, this means integration into the European digital infrastructure and access to cross-border health data exchange through the National Contact Points for eHealth."
+            },
+            {
+                "type": "paragraph",
+                "text": "Regulation on Health Technology Assessment\nRegulation (EU) 2021/2282 introduces an EU-wide framework for Health Technology Assessment (HTA). The goal is for new medicines, medical devices, and therapies to be evaluated in a scientifically sound and coordinated manner throughout the EU. Instead of each country conducting separate analyses, joint clinical assessments will be carried out, especially for new oncology drugs, therapies for rare diseases, and high-risk medical devices. This reduces duplication of effort and accelerates patient access to innovations.\nManufacturers will be able to receive scientific advice at the European level to design clinical trials that meet the needs of HTA bodies. Although pricing decisions remain a national competence, countries will work with a common scientific basis. For Bulgaria, this means that NHIS and related institutions will be able to use these assessments as part of the process of integrating new technologies into the health system."
             },
             {
                 "type": "image",
-                "url": "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "User-friendly healthcare interfaces make a difference"
+                "url": "https://imagizer.imageshack.com/img922/9977/Xoo5rk.png"
             },
             {
                 "type": "paragraph",
-                "text": "For healthcare providers, software should enhance their ability to deliver quality care rather than create additional administrative burden. This requires careful consideration of clinical workflows, integration with existing systems, and robust security measures to protect patient data."
+                "text": "The Way Forward: Digital Transformation of Health Systems\nThe European Commission emphasizes that digital technologies must be considered an essential part of healthcare. Successful transformation requires solutions that are tailored to both patient needs and the specific characteristics of health systems. Exchange of good practices, investment in integrated infrastructure, and development of digital skills among medical professionals and citizens are necessary.\nIn Bulgaria, through NHIS, these processes are woven into national practice, allowing better access to data, higher quality services, and participation in European networks. NHIS should develop not only as an administrative system, but as a key tool for health data exchange and integration into the European digital health space.\nFor Bulgarian professionals, these legislative acts mean a future in which clinical practice, patient access, and the implementation of innovations will be better coordinated at the European level. Knowledge of these rules is key not only for compliance with requirements, but also for active participation in the transformation of healthcare through NHIS."
+            },
+            {
+                "type": "paragraph",
+                "text": "References"
+            },
+            {
+                "type": "paragraph",
+                "text": "Directive 2011/24/EU",
+                "link": "https://eur-lex.europa.eu/legal-content/BG/TXT/?uri=CELEX%3A32011L0024"
+            },
+            {
+                "type": "paragraph",
+                "text": "Implementing Decision (EU) 2019/1765",
+                "link": "https://eur-lex.europa.eu/legal-content/BG/TXT/?uri=CELEX%3A32019D1765"
+            },
+            {
+                "type": "paragraph",
+                "text": "Regulation (EU) 2021/2282",
+                "link": "https://eur-lex.europa.eu/eli/reg/2021/2282/oj"
+            },
+            {
+                "type": "paragraph",
+                "text": "National Health Information System (NHIS)",
+                "link": "https://his.bg/bg/about"
             }
         ],
-        "date": "March 5, 2025"
-    },
-    {
-        "id": 4,
-        "title": "The Importance of Data Security in Healthcare",
-        "preview": "Understanding HIPAA compliance, data protection, and security best practices when developing healthcare software applications.",
-        "imageUrl": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "Healthcare data is among the most sensitive information we handle as software developers. Patient privacy isn't just a legal requirement—it's a fundamental trust that forms the foundation of the healthcare relationship."
-            },
-            {
-                "type": "paragraph",
-                "text": "HIPAA compliance goes beyond encryption and access controls. It requires a comprehensive approach to data handling, including employee training, audit trails, incident response procedures, and regular security assessments."
-            },
-            {
-                "type": "image",
-                "url": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "Security is paramount in healthcare software"
-            },
-            {
-                "type": "paragraph",
-                "text": "As developers, we must build security into every layer of our applications—from secure coding practices and database encryption to secure communication protocols and user authentication. The cost of a data breach in healthcare extends far beyond financial penalties; it can destroy the trust that patients place in their healthcare providers."
-            }
-        ],
-        "date": "February 28, 2025"
-    },
-    {
-        "id": 5,
-        "title": "Modern Web Development Best Practices",
-        "preview": "Essential principles for building scalable, maintainable, and user-friendly web applications in today's development landscape.",
-        "imageUrl": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "Modern web development has evolved significantly over the past few years. Today's applications need to be fast, accessible, secure, and maintainable while providing excellent user experiences across all devices."
-            },
-            {
-                "type": "paragraph",
-                "text": "Performance optimization starts with choosing the right architecture and tools for your project. This includes considering factors like server-side rendering, code splitting, image optimization, and efficient state management."
-            },
-            {
-                "type": "image",
-                "url": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "Clean code and modern development practices"
-            },
-            {
-                "type": "paragraph",
-                "text": "Accessibility should be built into every application from the ground up. This means semantic HTML, proper ARIA labels, keyboard navigation support, and testing with screen readers. Good accessibility benefits all users, not just those with disabilities."
-            }
-        ],
-        "date": "February 25, 2025"
-    },
-    {
-        "id": 6,
-        "title": "The Role of AI in Modern Healthcare",
-        "preview": "Examining how artificial intelligence is revolutionizing diagnosis, treatment planning, and patient care in healthcare settings.",
-        "imageUrl": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "content": [
-            {
-                "type": "paragraph",
-                "text": "Artificial intelligence is no longer a futuristic concept in healthcare—it's a present reality that's transforming how we diagnose diseases, plan treatments, and deliver patient care."
-            },
-            {
-                "type": "paragraph",
-                "text": "Machine learning algorithms can analyze medical images with remarkable accuracy, often detecting subtle patterns that human eyes might miss. In radiology, AI systems are helping radiologists identify early-stage cancers, while in pathology, they're assisting with tissue analysis and diagnosis."
-            },
-            {
-                "type": "image",
-                "url": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
-                "caption": "AI-powered medical imaging and analysis"
-            },
-            {
-                "type": "paragraph",
-                "text": "The future of AI in healthcare lies not in replacing healthcare professionals, but in augmenting their capabilities. By handling routine tasks and providing data-driven insights, AI allows healthcare providers to focus on what they do best—caring for patients and making complex clinical decisions."
-            }
-        ],
-        "date": "February 20, 2025"
+        "date": "20.03.2025"
     }
 ]
