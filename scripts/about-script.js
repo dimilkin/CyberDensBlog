@@ -23,6 +23,10 @@ function initializeHeader() {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            
+            if (window.AnalyticsEvents) {
+                window.AnalyticsEvents.trackMenuToggle();
+            }
         });
         
         // Close mobile menu when clicking on links
@@ -53,7 +57,12 @@ function initializeAboutPage() {
     const contactLinks = document.querySelectorAll(".contact-link");
     contactLinks.forEach(link => {
         link.addEventListener("click", function(e) {
-            console.log("Contact link clicked:", this.href);
+            const linkText = this.textContent.trim();
+            const linkUrl = this.href;
+            
+            if (window.AnalyticsEvents) {
+                window.AnalyticsEvents.trackExternalLink(linkUrl, linkText);
+            }
             
             // Add click animation
             this.style.transform = "scale(0.95)";

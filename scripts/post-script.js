@@ -24,6 +24,10 @@ function initializeHeader() {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            
+            if (window.AnalyticsEvents) {
+                window.AnalyticsEvents.trackMenuToggle();
+            }
         });
         
         // Close mobile menu when clicking on links
@@ -229,22 +233,46 @@ function initializeShareButtons() {
 
 // Share functions
 function shareOnTwitter() {
+    const postTitle = document.getElementById('post-title').textContent;
+    
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.trackShare('Twitter', postTitle);
+    }
+    
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(document.title);
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
 }
 
 function shareOnLinkedIn() {
+    const postTitle = document.getElementById('post-title').textContent;
+    
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.trackShare('LinkedIn', postTitle);
+    }
+    
     const url = encodeURIComponent(window.location.href);
     window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
 }
 
 function shareOnFacebook() {
+    const postTitle = document.getElementById('post-title').textContent;
+    
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.trackShare('Facebook', postTitle);
+    }
+    
     const url = encodeURIComponent(window.location.href);
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
 }
 
 function copyLink() {
+    const postTitle = document.getElementById('post-title').textContent;
+    
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.trackCopyLink(postTitle);
+    }
+    
     if (navigator.clipboard) {
         navigator.clipboard.writeText(window.location.href).then(() => {
             showNotification('Link copied to clipboard!');

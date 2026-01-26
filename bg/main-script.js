@@ -22,6 +22,10 @@ function initializeHeader() {
     menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        if (window.AnalyticsEvents) {
+            window.AnalyticsEvents.trackMenuToggle();
+        }
     });
     
     // Close mobile menu when clicking on links
@@ -96,6 +100,11 @@ function createPostElement(post, index) {
     
     // Add click handler
     postDiv.addEventListener("click", function () {
+        // Track post click
+        if (window.AnalyticsEvents) {
+            window.AnalyticsEvents.trackPostClick(post.title, post.id);
+        }
+        
         // Add loading state
         postDiv.style.opacity = '0.7';
         postDiv.style.pointerEvents = 'none';
