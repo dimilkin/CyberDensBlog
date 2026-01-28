@@ -110,5 +110,78 @@
             }
         ],
         "date": "20.03.2025"
-    }
+    },
+    {
+        "id": 3,
+        "title": "Don't Automate Care – Automate the Documents.",
+        "preview": "Automating processes in a dental clinic brings significant added value.",
+        "imageUrl": "https://images.cyberdens.tech/ai_dark_brain.png",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "\"I hear about many interesting innovations and new technologies entering dentistry, but I'm not a technical person.\" You don’t need a technical degree to benefit from automation, innovation, and AI. You just need to understand what’s possible, what’s realistic, and how to get help. Let’s first focus on the area that frees up the most staff hours – automation."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyberdens.tech/flow1.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "What does \"automation\" really mean?"
+            },
+            {
+                "type": "paragraph",
+                "text": "When I say \"automation,\" I don’t mean replacing staff with robots, learning programming, or buying expensive corporate software. I mean connecting tools you already use and that are free – like Google Calendar, Gmail, Docs, and others – so they can talk to each other. I mean eliminating repetitive manual tasks, like copying information from patient-filled forms into computer documents. I mean creating consistent, reliable processes that run the same way every time – helping ensure predictability and dependability. That’s all – nothing mystical, just logic and connectivity."
+            },
+            {
+                "type": "paragraph",
+                "text": "What can and cannot be automated?"
+            },
+            {
+                "type": "paragraph",
+                "text": "Good candidates for automation are tasks that happen the same way every time: repetitive data entry, sending routine emails, creating documents from templates, moving information from one place to another, organizing and storing information. In dental practice, this means things like turning registration form data into a patient file, automatic emails after appointments, requests for feedback and reviews, appointment reminders, and messages about upcoming checkups."
+            },
+            {
+                "type": "paragraph",
+                "text": "Poor candidates for automation are anything requiring judgment or empathy: handling unique patient situations, complex decision-making, building patient relationships, clinical assessments, handling complaints. The rule is simple: if the task requires human judgment or compassion, leave it human. If it’s mechanical and repetitive – automate it. Never automate patient care, only document-related work."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyberdens.tech/dental-reception2.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "Actual costs and investment?"
+            },
+            {
+                "type": "paragraph",
+                "text": "Let’s talk numbers. For software, you can use Google products – Sheets, Forms, Docs, Calendar, etc. You can also use other open-source automation tools for signing and various functionalities. Google products cost 0 BGN/month. Open-source software monthly fees are also 0 BGN/month."
+            },
+            {
+                "type": "paragraph",
+                "text": "For initial setup, you have two options. You can hire someone to set it up, or do it yourself. In one case, you pay someone for the service; in the other, the cost is your time. Ongoing maintenance is minimal – about one to two hours per quarter for updating templates, software updates, or automation adjustments when new requirements appear."
+            },
+            {
+                "type": "paragraph",
+                "text": "If automation saves 3–4 hours per week per staff member at 15–20 BGN per hour, you save 2,500–4,000 BGN annually just in labor. Plus added value for patients and a system that can provide data for analyzing business processes."
+            },
+            {
+                "type": "paragraph",
+                "text": "What does the process actually look like?"
+            },
+            {
+                "type": "paragraph",
+                "text": "Building it usually takes a day or two, depending on the complexity of the process. Then it’s thoroughly tested. Next, staff are trained – how to work with the new tools, what to expect, and what to watch for. Finally, the automation is launched in a live environment and its performance is monitored."
+            },
+            {
+                "type": "paragraph",
+                "text": "Should you do it yourself or hire help?"
+            },
+            {
+                "type": "paragraph",
+                "text": "This decision depends entirely on your situation. You can always do it yourself. If you’re interested in new technologies and can dedicate free time to building these processes – this is a valid option. If your goal is a fast result and business needs, aiming for best practices, require it to work perfectly from day one, and don’t have free time – hire a consultant. A good consultant makes you independent, not dependent."
+            }
+        ],
+        "date": "05.01.2026"
+    }    
 ]
