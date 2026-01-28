@@ -299,6 +299,10 @@
     padding: 0 var(--space-md);
   }
   
+  .post-title {
+    font-size: 14px;
+  }
+  
   .post-content {
     padding: var(--space-lg);
   }

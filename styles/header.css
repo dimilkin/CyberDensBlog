@@ -34,6 +34,22 @@ header.scrolled {
   background-clip: text;
   text-decoration: none;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.3));
+  transition: var(--transition-normal);
+}
+
+.logo:hover .logo-img {
+  filter: drop-shadow(0 0 12px rgba(100, 255, 218, 0.5));
+  transform: rotate(5deg) scale(1.1);
 }
 
 .logo::after {
