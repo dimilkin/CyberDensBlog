@@ -61,7 +61,8 @@ function loadPosts() {
                 return;
             }
 
-            posts.forEach((post, index) => {
+            const displayedPosts = [...posts].reverse();
+            displayedPosts.forEach((post, index) => {
                 const postElement = createPostElement(post, index);
                 container.appendChild(postElement);
             });
