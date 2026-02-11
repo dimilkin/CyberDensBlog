@@ -36,25 +36,12 @@ class AnalyticsEvents {
         });
     }
 
-    static trackLanguageSwitch(fromLang, toLang) {
-        this.trackEvent('language_switch', {
-            'event_category': 'navigation',
-            'from_language': fromLang,
-            'to_language': toLang
-        });
-    }
-
     static trackMenuToggle() {
         this.trackEvent('menu_toggle', {
             'event_category': 'navigation'
         });
     }
 
-    static trackSearch(searchTerm) {
-        this.trackEvent('search', {
-            'search_term': searchTerm
-        });
-    }
 }
 
 window.AnalyticsEvents = AnalyticsEvents;

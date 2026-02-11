@@ -1,15 +1,12 @@
 class CookieConsent {
     constructor() {
-        this.consentKey = 'ga_cookie_consent';
-        this.measurementId = 'G-ENG5943LB4';
+        this.consentKey = 'cookie_consent';
         this.init();
     }
 
     init() {
         if (!this.hasConsent()) {
             this.showBanner();
-        } else if (this.getConsent() === 'accepted') {
-            this.enableAnalytics();
         }
     }
 
@@ -23,41 +20,39 @@ class CookieConsent {
 
     showBanner() {
         const isEnglish = !window.location.pathname.includes('/bg/');
-        
+
         const banner = document.createElement('div');
         banner.id = 'cookie-consent-banner';
         banner.innerHTML = isEnglish ? `
             <div class="cookie-consent-content">
-                <p>This website uses cookies to analyze traffic and improve your experience.</p>
+                <p>This website uses essential cookies, including analytics, to ensure proper functionality and improve your experience.</p>
                 <div class="cookie-consent-buttons">
-                    <button id="accept-cookies" class="cookie-btn accept">Accept</button>
-                    <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+                    <button id="accept-all-cookies" class="cookie-btn accept">Allow All Cookies</button>
+                    <button id="accept-essential-cookies" class="cookie-btn decline">Essential Only</button>
                 </div>
             </div>
         ` : `
             <div class="cookie-consent-content">
-                <p>Този уебсайт използва бисквитки за анализ на трафика и подобряване на вашето изживяване.</p>
+                <p>Този уебсайт използва основни бисквитки, включително за анализ, за правилно функциониране и подобряване на вашето изживяване.</p>
                 <div class="cookie-consent-buttons">
-                    <button id="accept-cookies" class="cookie-btn accept">Приемам</button>
-                    <button id="decline-cookies" class="cookie-btn decline">Отказвам</button>
+                    <button id="accept-all-cookies" class="cookie-btn accept">Всички бисквитки</button>
+                    <button id="accept-essential-cookies" class="cookie-btn decline">Само основни</button>
                 </div>
             </div>
         `;
         document.body.appendChild(banner);
 
-        document.getElementById('accept-cookies').addEventListener('click', () => this.acceptCookies());
-        document.getElementById('decline-cookies').addEventListener('click', () => this.declineCookies());
+        document.getElementById('accept-all-cookies').addEventListener('click', () => this.acceptAll());
+        document.getElementById('accept-essential-cookies').addEventListener('click', () => this.acceptEssential());
     }
 
-    acceptCookies() {
-        localStorage.setItem(this.consentKey, 'accepted');
-        this.enableAnalytics();
+    acceptAll() {
+        localStorage.setItem(this.consentKey, 'all');
         this.removeBanner();
     }
 
-    declineCookies() {
-        localStorage.setItem(this.consentKey, 'declined');
-        this.disableAnalytics();
+    acceptEssential() {
+        localStorage.setItem(this.consentKey, 'essential');
         this.removeBanner();
     }
 
@@ -66,24 +61,6 @@ class CookieConsent {
         if (banner) {
             banner.style.animation = 'slideDown 0.3s ease-out';
             setTimeout(() => banner.remove(), 300);
-        }
-    }
-
-    enableAnalytics() {
-        window['ga-disable-' + this.measurementId] = false;
-        if (typeof gtag !== 'undefined') {
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted'
-            });
-        }
-    }
-
-    disableAnalytics() {
-        window['ga-disable-' + this.measurementId] = true;
-        if (typeof gtag !== 'undefined') {
-            gtag('consent', 'update', {
-                'analytics_storage': 'denied'
-            });
         }
     }
 }
@@ -95,4 +72,3 @@ if (document.readyState === 'loading') {
 } else {
     new CookieConsent();
 }
-
