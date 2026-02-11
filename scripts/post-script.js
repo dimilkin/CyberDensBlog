@@ -107,18 +107,24 @@ function displayPost(post) {
     // Add smooth animations
     animateContent();
 
-    // Fire GA4 post_view event
-    if (window.gtag) {
+    // Send page_view to GA4 with article details
+    if (typeof gtag !== 'undefined') {
         try {
+            gtag('event', 'page_view', {
+                page_title: post.title + ' - Cyberdens',
+                page_location: window.location.href,
+                page_path: window.location.pathname + window.location.search
+            });
+            
+            // Also send custom post_view event for additional tracking
             gtag('event', 'post_view', {
                 post_id: String(post.id),
                 post_title: post.title,
                 post_date: post.date,
-                language: document.documentElement.lang || 'en',
-                page_location: window.location.href
+                language: document.documentElement.lang || 'en'
             });
         } catch (e) {
-            // no-op
+            console.error('GA tracking error:', e);
         }
     }
 }
