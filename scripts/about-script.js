@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.setUserLanguage(document.documentElement.lang || 'en');
+    }
     initializeHeader();
     initializeAboutPage();
 });

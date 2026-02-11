@@ -101,13 +101,14 @@ function displayPost(post) {
         });
     }
     
-    // Add reading progress indicator
-    addReadingProgress();
-    
-    // Add smooth animations
+    addReadingProgress(post);
     animateContent();
 
-    // Send page_view to GA4 with article details
+    const lang = document.documentElement.lang || 'bg';
+    if (window.AnalyticsEvents) {
+        window.AnalyticsEvents.setUserLanguage(lang);
+    }
+
     if (typeof gtag !== 'undefined') {
         try {
             gtag('event', 'page_view', {
@@ -115,13 +116,15 @@ function displayPost(post) {
                 page_location: window.location.href,
                 page_path: window.location.pathname + window.location.search
             });
-            
-            // Also send custom post_view event for additional tracking
+
             gtag('event', 'post_view', {
                 post_id: String(post.id),
                 post_title: post.title,
                 post_date: post.date,
-                language: document.documentElement.lang || 'bg'
+                content_type: 'blog_post',
+                item_id: String(post.id),
+                content_group: 'articles',
+                language: lang
             });
         } catch (e) {
             console.error('GA tracking error:', e);
@@ -322,20 +325,31 @@ function fallbackCopyLink(url) {
     document.body.removeChild(textArea);
 }
 
-// Add reading progress indicator
-function addReadingProgress() {
+function addReadingProgress(post) {
     const progressBar = document.createElement('div');
     progressBar.className = 'reading-progress';
     progressBar.innerHTML = '<div class="progress-fill"></div>';
     document.body.appendChild(progressBar);
-    
+
+    const scrollMilestones = [25, 50, 75, 100];
+    const reached = new Set();
+
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset;
         const docHeight = document.body.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        
+        const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
         const progressFill = progressBar.querySelector('.progress-fill');
         progressFill.style.width = scrollPercent + '%';
+
+        if (post && window.AnalyticsEvents) {
+            scrollMilestones.forEach(pct => {
+                if (scrollPercent >= pct && !reached.has(pct)) {
+                    reached.add(pct);
+                    window.AnalyticsEvents.trackScrollDepth(pct, post.id, post.title);
+                }
+            });
+        }
     });
 }
 
