@@ -31,8 +31,7 @@ function initializeHeader() {
         }
     });
     
-    // Close mobile menu when clicking on links
-    document.querySelectorAll('.nav-link').forEach(link => {
+    document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
         link.addEventListener('click', () => {
             menuToggle.classList.remove('active');
             navMenu.classList.remove('active');
@@ -90,9 +89,11 @@ function createPostElement(post, index) {
     postDiv.classList.add("blog-post");
     postDiv.style.animationDelay = `${index * 0.1}s`;
     
+    const category = post.category || 'Статия';
     postDiv.innerHTML = `
         ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${post.title}" class="blog-thumbnail" loading="lazy">` : ""}
         <div class="post-content">
+            <span class="post-eyebrow">${category}</span>
             <h3 class="post-title">${post.title}</h3>
             <p class="post-preview">${post.preview}</p>
             <div class="post-meta">
@@ -115,15 +116,6 @@ function createPostElement(post, index) {
         
         // Navigate to post
         window.location.href = `post.html?id=${post.id}`;
-    });
-    
-    // Add hover effects
-    postDiv.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px)';
-    });
-    
-    postDiv.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
     });
     
     return postDiv;

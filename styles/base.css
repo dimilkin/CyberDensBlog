@@ -11,33 +11,45 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text-body);
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
 }
 
-/* Animated Background */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 107, 157, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(100, 255, 218, 0.2) 0%, transparent 50%);
-  z-index: -1;
-  animation: backgroundShift 20s ease-in-out infinite;
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  color: var(--color-navy);
 }
 
-@keyframes backgroundShift {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+a {
+  color: var(--color-blue);
+}
+
+/* Tags / Badges */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.tag-tech {
+  background: var(--color-tag-blue-bg);
+  color: var(--color-tag-blue-fg);
+}
+
+.tag-health {
+  background: var(--color-tag-green-bg);
+  color: var(--color-tag-green-fg);
+}
+
+.tag-general {
+  background: var(--color-tag-slate-bg);
+  color: var(--color-tag-slate-fg);
 }
 
 /* Scrollbar Styling */
@@ -46,27 +58,27 @@ body::before {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: var(--color-surface-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  background: var(--color-border);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--accent-secondary), var(--accent-primary));
+  background: var(--color-text-muted);
 }
 
 /* Selection Styling */
 ::selection {
-  background: rgba(100, 255, 218, 0.3);
-  color: var(--text-primary);
+  background: var(--color-tag-blue-bg);
+  color: var(--color-text-primary);
 }
 
 /* Focus Styles */
 *:focus {
-  outline: 2px solid var(--accent-primary);
+  outline: 2px solid var(--color-blue);
   outline-offset: 2px;
 }
 
@@ -100,13 +112,13 @@ body::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.95);
-  color: white;
+  background: var(--color-surface);
+  color: var(--color-text-body);
   padding: 20px;
   z-index: 10000;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 10px rgba(13, 43, 69, 0.1);
   animation: slideUp 0.3s ease-out;
-  border-top: 2px solid var(--accent-primary);
+  border-top: 2px solid var(--color-border);
 }
 
 @keyframes slideUp {
@@ -145,12 +157,12 @@ body::before {
 }
 
 .cookie-consent-content a {
-  color: var(--accent-primary);
+  color: var(--color-blue);
   text-decoration: underline;
 }
 
 .cookie-consent-content a:hover {
-  color: var(--accent-secondary);
+  color: var(--color-blue-light);
 }
 
 .cookie-consent-buttons {
@@ -162,33 +174,32 @@ body::before {
 .cookie-btn {
   padding: 10px 24px;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   font-size: 14px;
-  font-family: var(--font-primary);
+  font-family: var(--font-sans);
 }
 
 .cookie-btn.accept {
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background: var(--color-navy);
   color: white;
 }
 
 .cookie-btn.accept:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.4);
+  background: var(--color-navy-mid);
 }
 
 .cookie-btn.decline {
   background: transparent;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-text-body);
+  border: 1.5px solid var(--color-border);
 }
 
 .cookie-btn.decline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
+  background: var(--color-surface-2);
+  border-color: var(--color-blue);
 }
 
 @media (max-width: 768px) {

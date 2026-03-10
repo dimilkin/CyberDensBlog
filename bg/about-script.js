@@ -179,7 +179,7 @@ function showNotification(message) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: var(--accent-gradient);
+        background: var(--color-navy);
         color: white;
         padding: 12px 24px;
         border-radius: 8px;

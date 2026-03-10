@@ -316,7 +316,7 @@ function addReadingProgress(post) {
         left: 0;
         width: 0%;
         height: 3px;
-        background: var(--accent-gradient);
+        background: var(--color-blue);
         z-index: 9999;
         transition: width 0.3s ease;
     `;
@@ -381,7 +381,7 @@ function showNotification(message) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: var(--accent-gradient);
+        background: var(--color-blue);
         color: white;
         padding: 12px 24px;
         border-radius: 8px;
