@@ -115,7 +115,7 @@
         "id": 3,
         "title": "Don't Automate Care – Automate the Documents.",
         "preview": "Automating processes in a dental clinic brings significant added value.",
-        "imageUrl": "https://images.cyberdens.tech/ai_dark_brain.png",
+        "imageUrl": "https://images.cyber-health-tech.com/ai_dark_brain.png",
         "content": [
             {
                 "type": "paragraph",
@@ -123,7 +123,7 @@
             },
             {
                 "type": "image",
-                "url": "https://images.cyberdens.tech/flow1.png"
+                "url": "https://images.cyber-health-tech.com/flow1.png"
             },
             {
                 "type": "paragraph",
@@ -147,7 +147,7 @@
             },
             {
                 "type": "image",
-                "url": "https://images.cyberdens.tech/dental-reception2.png"
+                "url": "https://images.cyber-health-tech.com/dental-reception2.png"
             },
             {
                 "type": "paragraph",
@@ -183,5 +183,91 @@
             }
         ],
         "date": "05.01.2026"
-    }    
+    },
+    {
+        "id": 5,
+        "title": "12 Dollars a Year: How We Built a Modern Website for Our Clinic Using AI and Cloudflare",
+        "preview": "How we took control of our digital presence and built a modern website for less than the price of a coffee per month.",
+        "imageUrl": "https://images.cyber-health-tech.com/website-ui.png",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Around 2008, when I first tried to build a website, the process was fairly difficult – there were no ready-made solutions, templates, or AI. There were paid themes available, but if you wanted something truly your own, it required serious effort and technical knowledge."
+            },
+            {
+                "type": "paragraph",
+                "text": "Then came WordPress. It allowed people with almost no experience to build what I call 'business card' websites with far less effort – but the process still required choosing a theme, hiring compatible hosting, and attending to countless details that make the difference: design, images, text. To this day, a large portion of the world's websites are built on that platform."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyber-health-tech.com/template-wordpress.jpg"
+            },
+            {
+                "type": "paragraph",
+                "text": "Over the last few years, however, we've witnessed something different. AI tools have made building your own website genuinely accessible to anyone – from idea to live site in just a few hours, with nearly all those details already taken care of."
+            },
+            {
+                "type": "paragraph",
+                "text": "That's exactly what we did. After taking control of our domain, we connected it to Cloudflare Pages – a free hosting solution for static websites. AI tools are exceptionally good at generating exactly this type of site."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyber-health-tech.com/clowdflare_pages.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "The only thing we were missing was up-to-date photos of our team and clinic – so we organised a photoshoot, which turned out to be a lot of fun, and the results were great. The site was ready the next day – I added the photos, polished a few details, and the job was done."
+            },
+            {
+                "type": "paragraph",
+                "text": "Hosting cost: $0/year. Static page hosting on Cloudflare is completely free. The only recurring expense is the domain – the standard ~$12/year for a .eu address. No other fees."
+            },
+            {
+                "type": "paragraph",
+                "text": "For $12 a year, the clinic now has a modern, fully owned website."
+            }
+        ],
+        "date": "05.03.2026"
+    },
+    {
+        "id": 6,
+        "title": "Digitizing Registration Forms and Informed Consents",
+        "preview": "In today's dental practice, we work with an ever-growing number of documents and forms.",
+        "imageUrl": "https://images.cyber-health-tech.com/hall5.png",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "In today's dental practice, we work with an ever-growing number of documents and forms. Patients fill out registration documents at their first visit, questionnaires before procedures, informed consents, forms for NHIS, NHIF, and so on and so forth. When this process is carried out on paper, it generates a large volume of documents that we are obliged to keep and store for a considerably long period of time. Imagine an orthodontic practice with a high patient turnover – many of them coming in for trivial things like wire changes, re-bonding a fallen bracket, or elastics. Regardless of the procedure, the requirement for completed documentation remains."
+            },
+            {
+                "type": "paragraph",
+                "text": "The good news is that the law allows this documentation to be handled digitally – there is no obligation for it to be on paper."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyber-health-tech.com/flow4.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "In our clinic's specific case, we did the following: we identified which forms were actually being used in the practice. You wouldn't believe how many different versions had accumulated over the years. We narrowed it down to 3 key documents to start with – the form filled out before a visit, before a surgical procedure, and before an implantology procedure. We later added the informed consents and other documents."
+            },
+            {
+                "type": "paragraph",
+                "text": "Each form was recreated in a digital version. Now the patient can open it on their phone or on the tablet in the clinic and fill it out at their own pace. Once the data is submitted, it goes into the central 'smart' system. This system can be many things – from a simple Python or Bash script, through various automation software, all the way to the latest options – AI agents. The latter are very powerful tools and offer a great deal of flexibility. In our case, we went with the middle option – an automation system."
+            },
+            {
+                "type": "image",
+                "url": "https://images.cyber-health-tech.com/flow2.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "It reads the patient's responses and automatically fills them into the form. Once complete, it generates a PDF file that appears at the clinic's reception desk. There, the patient can calmly sign the same file using a signing tablet. Finally, the signed document is stored on the main computer and in one additional backup location. This has completely eliminated the need to print documents, fill them out by hand, and store them alongside the patient's physical file somewhere."
+            },
+            {
+                "type": "paragraph",
+                "text": "Costs: For filling out the documents we used Google's tools, which are free – Google Forms, Docs, and Sheets. The 'thinking' system runs locally on a computer in the clinic – it operates 24/7 and costs only as much as the computer's electricity consumption during normal use. The signing tablet has only an initial purchase cost. The signed documents are stored locally on the computer and on an external hard drive – again, with no ongoing maintenance costs."
+            }
+        ],
+        "date": "06.03.2026"
+    }
 ]
