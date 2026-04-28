@@ -39,6 +39,13 @@ function initializeHeader() {
                 navMenu.classList.remove('active');
             });
         });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav') && navMenu.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
     }
 }
 
