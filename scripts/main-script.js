@@ -6,6 +6,51 @@ document.addEventListener("DOMContentLoaded", function () {
     loadPosts();
 });
 
+const STATIC_POSTS = [
+    {
+        id: 1,
+        title: "DNA and NHIS",
+        preview: "The similarities between biological and computer systems",
+        imageUrl: "https://imagizer.imageshack.com/img923/5682/2V80T8.png",
+        date: "17.09.2025"
+    },
+    {
+        id: 2,
+        title: "Digital Health in the EU and NHIS",
+        preview: "Integrated health information across the 27 member states",
+        imageUrl: "https://imagizer.imageshack.com/img922/9263/UW9w69.png",
+        date: "20.03.2025"
+    },
+    {
+        id: 3,
+        title: "Don't Automate the Care — Automate the Paperwork.",
+        preview: "Automating processes in a dental clinic delivers significant added value",
+        imageUrl: "https://images.cyber-health-tech.com/ai_dark_brain.png",
+        date: "05.01.2026"
+    },
+    {
+        id: 4,
+        title: "$12 a Year for a Modern Clinic Website with AI and Cloudflare",
+        preview: "How we built a modern website with new technologies in no time",
+        imageUrl: "https://images.cyber-health-tech.com/website-ui.png",
+        date: "05.03.2026"
+    },
+    {
+        id: 6,
+        title: "Digitising the Registration Form and Informed Consent Documents",
+        preview: "In today's dental practice, we work with an ever-growing number of documents and forms.",
+        imageUrl: "https://images.cyber-health-tech.com/hall5.png",
+        date: "06.03.2026"
+    },
+    {
+        id: 7,
+        title: "Blender and AI: The Future of 3D Design in Dental Medicine",
+        preview: "Blender can now be controlled autonomously by an AI agent. What does this mean for the dental world?",
+        imageUrl: "https://images.cyber-health-tech.com/blender_ai3.png",
+        date: "28.04.2026"
+    }
+];
+
 // Header functionality
 function initializeHeader() {
     const header = document.getElementById('header');
@@ -49,45 +94,26 @@ function initializeHeader() {
 // Load and display blog posts
 function loadPosts() {
     const container = document.getElementById("posts-container");
-    
-    fetch("assets/posts.json")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load posts');
-            }
-            return response.json();
-        })
-        .then(posts => {
-            container.innerHTML = "";
-            
-            if (!posts || posts.length === 0) {
-                container.innerHTML = `
-                    <div class="no-posts">
-                        <h3>No posts available</h3>
-                        <p>Check back soon for new content!</p>
-                    </div>
-                `;
-                return;
-            }
+    container.innerHTML = "";
 
-            const displayedPosts = [...posts].reverse();
-            displayedPosts.forEach((post, index) => {
-                const postElement = createPostElement(post, index);
-                container.appendChild(postElement);
-            });
-            
-            // Add stagger animation
-            animatePostsIn();
-        })
-        .catch(error => {
-            console.error("Error loading posts:", error);
-            container.innerHTML = `
-                <div class="error-message">
-                    <h3>Unable to load posts</h3>
-                    <p>Please try refreshing the page.</p>
-                </div>
-            `;
-        });
+    if (!STATIC_POSTS.length) {
+        container.innerHTML = `
+            <div class="no-posts">
+                <h3>No posts available</h3>
+                <p>Check back soon for new content!</p>
+            </div>
+        `;
+        return;
+    }
+
+    const displayedPosts = [...STATIC_POSTS].reverse();
+    displayedPosts.forEach((post, index) => {
+        const postElement = createPostElement(post, index);
+        container.appendChild(postElement);
+    });
+
+    // Add stagger animation
+    animatePostsIn();
 }
 
 // Create individual post element
@@ -121,8 +147,8 @@ function createPostElement(post, index) {
         postDiv.style.opacity = '0.7';
         postDiv.style.pointerEvents = 'none';
         
-        // Navigate to post
-        window.location.href = `post.html?id=${post.id}`;
+        // Navigate to static post page
+        window.location.href = `posts/post-${post.id}.html`;
     });
     
     return postDiv;

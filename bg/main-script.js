@@ -6,6 +6,51 @@ document.addEventListener("DOMContentLoaded", function () {
     loadPosts();
 });
 
+const STATIC_POSTS_BG = [
+    {
+        id: 1,
+        title: "ДНК и НЗИС",
+        preview: "Какви са приликите между билогичните и компютърните системи",
+        imageUrl: "https://imagizer.imageshack.com/img923/5682/2V80T8.png",
+        date: "17.09.2025"
+    },
+    {
+        id: 2,
+        title: "Дигиталното здраве в ЕС и НЗИС",
+        preview: "Интегрирана здравна информация в 27те страни-членки",
+        imageUrl: "https://imagizer.imageshack.com/img922/9263/UW9w69.png",
+        date: "20.03.2025"
+    },
+    {
+        id: 3,
+        title: "Не автоматизирайте грижата - Автоматизирайте документите.",
+        preview: "Автоматизацията на процесите в денталната клиника носи голяма добавена стойност",
+        imageUrl: "https://images.cyber-health-tech.com/ai_dark_brain.png",
+        date: "05.01.2026"
+    },
+    {
+        id: 4,
+        title: "12 долара на година за модерен сайт на клиниката с AI и Cloudflare",
+        preview: "Как изградихме модерен сайт с нови технологии за нула време",
+        imageUrl: "https://images.cyber-health-tech.com/website-ui.png",
+        date: "05.03.2026"
+    },
+    {
+        id: 6,
+        title: "Дигитализиране на регистрационната форма и информираните съгласия",
+        preview: "В днешната дентална практика работим с все повече документи и бланки.",
+        imageUrl: "https://images.cyber-health-tech.com/hall5.png",
+        date: "06.03.2026"
+    },
+    {
+        id: 7,
+        title: "Blender и AI: Бъдещето на 3D дизайна в денталната медицина",
+        preview: "Блендър вече може да се управлява от AI агент автономно. Какво означава това за денталния свят?",
+        imageUrl: "https://images.cyber-health-tech.com/blender_ai3.png",
+        date: "28.04.2026"
+    }
+];
+
 // Header functionality
 function initializeHeader() {
     const header = document.getElementById('header');
@@ -49,45 +94,26 @@ function initializeHeader() {
 // Load and display blog posts
 function loadPosts() {
     const container = document.getElementById("posts-container");
-    
-    fetch("../assets/posts-bg.json")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load posts');
-            }
-            return response.json();
-        })
-        .then(posts => {
-            container.innerHTML = "";
-            
-            if (!posts || posts.length === 0) {
-                container.innerHTML = `
-                    <div class="no-posts">
-                        <h3>Няма налични статии</h3>
-                        <p>Връщете се скоро за ново съдържание!</p>
-                    </div>
-                `;
-                return;
-            }
+    container.innerHTML = "";
 
-            const displayedPosts = [...posts].reverse();
-            displayedPosts.forEach((post, index) => {
-                const postElement = createPostElement(post, index);
-                container.appendChild(postElement);
-            });
-            
-            // Add stagger animation
-            animatePostsIn();
-        })
-        .catch(error => {
-            console.error("Error loading posts:", error);
-            container.innerHTML = `
-                <div class="error-message">
-                    <h3>Неуспешно зареждане на статиите</h3>
-                    <p>Моля, опитайте да обновите страницата.</p>
-                </div>
-            `;
-        });
+    if (!STATIC_POSTS_BG.length) {
+        container.innerHTML = `
+            <div class="no-posts">
+                <h3>Няма налични статии</h3>
+                <p>Връщете се скоро за ново съдържание!</p>
+            </div>
+        `;
+        return;
+    }
+
+    const displayedPosts = [...STATIC_POSTS_BG].reverse();
+    displayedPosts.forEach((post, index) => {
+        const postElement = createPostElement(post, index);
+        container.appendChild(postElement);
+    });
+
+    // Add stagger animation
+    animatePostsIn();
 }
 
 // Create individual post element
@@ -121,8 +147,8 @@ function createPostElement(post, index) {
         postDiv.style.opacity = '0.7';
         postDiv.style.pointerEvents = 'none';
         
-        // Navigate to post
-        window.location.href = `post.html?id=${post.id}`;
+        // Navigate to static post page
+        window.location.href = `posts/post-${post.id}.html`;
     });
     
     return postDiv;
