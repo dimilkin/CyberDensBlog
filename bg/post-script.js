@@ -2,7 +2,74 @@ document.addEventListener("DOMContentLoaded", function() {
     initializeHeader();
     loadSinglePost();
     initializeShareButtons();
+    initializeMobileTitleBar();
 });
+
+function initializeMobileTitleBar() {
+    const postHeader = document.querySelector('.post-header');
+    const siteHeader = document.getElementById('header');
+    const postPage = document.querySelector('.post-page');
+    if (!postHeader || !siteHeader || !postPage) return;
+
+    const mql = window.matchMedia('(max-width: 768px)');
+
+    function positionTitleBar() {
+        if (!mql.matches) {
+            postHeader.style.top = '';
+            postPage.style.paddingTop = '';
+            return;
+        }
+        const rect = siteHeader.getBoundingClientRect();
+        const navBottom = Math.max(
+            Math.ceil(rect.bottom) + 2,
+            siteHeader.offsetHeight,
+            48
+        );
+        postHeader.style.top = navBottom + 'px';
+        const titleRect = postHeader.getBoundingClientRect();
+        const titleBarHeight = Math.ceil(titleRect.height) || postHeader.offsetHeight;
+        postPage.style.paddingTop = (navBottom + titleBarHeight + 12) + 'px';
+    }
+
+    function syncTitleBar() {
+        positionTitleBar();
+        if (!mql.matches) return;
+        if (window.scrollY <= 60) {
+            postHeader.classList.remove('title-hidden');
+        }
+    }
+
+    syncTitleBar();
+    window.addEventListener('resize', syncTitleBar, { passive: true });
+    window.addEventListener('load', syncTitleBar, { passive: true });
+    window.addEventListener('pageshow', syncTitleBar, { passive: true });
+
+    document.addEventListener('cyberdens-post-layout', () => {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(syncTitleBar);
+        });
+    });
+
+    if (typeof ResizeObserver !== 'undefined') {
+        const ro = new ResizeObserver(() => syncTitleBar());
+        ro.observe(siteHeader);
+        ro.observe(postHeader);
+    }
+
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', syncTitleBar, { passive: true });
+        window.visualViewport.addEventListener('scroll', syncTitleBar, { passive: true });
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!mql.matches) return;
+        if (window.scrollY > 60) {
+            postHeader.classList.add('title-hidden');
+        } else {
+            postHeader.classList.remove('title-hidden');
+        }
+    }, { passive: true });
+}
 
 // Header functionality (shared)
 function initializeHeader() {
@@ -119,7 +186,7 @@ function displayPost(post) {
     if (typeof gtag !== 'undefined') {
         try {
             gtag('event', 'page_view', {
-                page_title: post.title + ' - Cyberdens',
+                page_title: post.title + ' - Health Tech',
                 page_location: window.location.href,
                 page_path: window.location.pathname + window.location.search
             });
@@ -137,6 +204,8 @@ function displayPost(post) {
             console.error('GA tracking error:', e);
         }
     }
+
+    document.dispatchEvent(new Event('cyberdens-post-layout'));
 }
 
 // Create content elements based on type
@@ -201,7 +270,7 @@ function createContentElement(item, index) {
 
 // Update page metadata
 function updatePageMeta(post) {
-    document.title = `${post.title} - Cyberdens`;
+    document.title = `${post.title} - Health Tech`;
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -222,7 +291,7 @@ function updatePageMeta(post) {
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Cyberdens"
+            "name": "Health Tech"
         }
     };
     

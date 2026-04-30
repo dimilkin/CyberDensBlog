@@ -105,6 +105,10 @@ header.scrolled {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  header {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
   .nav-menu {
     position: fixed;
     top: 0;
