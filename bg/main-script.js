@@ -48,6 +48,14 @@ const STATIC_POSTS_BG = [
         preview: "Блендър вече може да се управлява от AI агент автономно. Какво означава това за денталния свят?",
         imageUrl: "https://images.cyber-health-tech.com/blender_ai3.png",
         date: "28.04.2026"
+    },
+    {
+        id: "ai-assitants",
+        slug: "ai-assitants",
+        title: "AI телефонните агенти: потенциал, ограничения и условия за успех",
+        preview: "От около година се занимавам професионално с разработка на AI агенти за фармацевтичния сектор в Германия.",
+        imageUrl: "https://images.cyber-health-tech.com/article-ai-assistant/Ai_assist2.png",
+        date: "02.06.2026"
     }
 ];
 
@@ -148,7 +156,7 @@ function createPostElement(post, index) {
         postDiv.style.pointerEvents = 'none';
         
         // Navigate to static post page
-        window.location.href = `posts/post-${post.id}.html`;
+        window.location.href = post.slug ? `posts/${post.slug}.html` : `posts/post-${post.id}.html`;
     });
     
     return postDiv;
